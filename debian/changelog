@@ -1,3 +1,14 @@
+debathena-athena-libraries (1.5) unstable; urgency=low
+
+  * Build a 32-bit Multi-Arch: foreign version
+    (debathena-athena-libraries-ia32), because we still have too much
+    32-bit software (Trac: #931)
+  * debathena-athena-libraries becomes an arch: any package (for
+    multi-arch support) and add a disjunctive recommendation on the new
+    debathena-athena-libraries-ia32 package
+
+ -- Jonathan Reed <jdreed@mit.edu>  Thu, 03 Jul 2014 11:04:13 -0400
+
 debathena-athena-libraries (1.4) unstable; urgency=low
 
   * Add git-buildpackage configuration

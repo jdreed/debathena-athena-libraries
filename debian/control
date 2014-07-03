@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7.0~)
 Standards-Version: 3.9.3
 
 Package: debathena-athena-libraries
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}
 Recommends: freeglut3,
  guile-1.6-libs,
@@ -41,12 +41,28 @@ Recommends: freeglut3,
  libutempter0,
  libwrap0,
  libgtksourceview1.0-0,
- ia32-libs
+ ia32-libs | debathena-athena-libraries-ia32
 # Note: libgtksourceview1.0-0 was requested by alexp for
 #       Stata locker.  It is gone in Oneiric+
 # Note: Make some effort to figure out what exactly wants
-#       libxss1 through libwrap0 and whether they're still needed 
+#       libxss1 through libwrap0 and whether they're still needed
 Description: Athena libraries for Debathena
  This metapackage recommends a set of libraries for compatibility with
  older locker software.  For simplicity, the package may recommend
  larger packages with both binaries and libraries.
+
+Package: debathena-athena-libraries-ia32
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: libgdk-pixbuf-2.0-0,
+ libgtk-2.0-0,
+ gtk2-engines-murrine,
+ libcanberra-gtk-module,
+ unity-gtk2-module,
+# Technically we also want overlay-scrollbar-gtk2, but it's broken
+# LP:1262022
+Description: 32-bit Athena libraries for Debathena
+ This metapackage recommends a set of libraries for compatibility with
+ older locker software.  This particular package is the 32-bit version,
+ which can be used to satsify dependencies on amd64 and i386.
