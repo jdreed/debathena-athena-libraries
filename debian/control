@@ -60,6 +60,9 @@ Recommends: libgdk-pixbuf-2.0-0,
  gtk2-engines-murrine,
  libcanberra-gtk-module,
  unity-gtk2-module,
+ libxmu6,
+ libxtst6,
+ freeglut3
 # Technically we also want overlay-scrollbar-gtk2, but it's broken
 # LP:1262022
 Description: 32-bit Athena libraries for Debathena
