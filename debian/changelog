@@ -1,3 +1,10 @@
+debathena-athena-libraries (1.6.1) unstable; urgency=low
+
+  * Add libxp6 (Trac: #1516) for i386, which was accidentally omitted from
+    1.6
+
+ -- Jonathan Reed <jdreed@mit.edu>  Tue, 12 Aug 2014 14:07:44 -0400
+
 debathena-athena-libraries (1.6) unstable; urgency=low
 
   * Add 32-bit versions of libxmu6, libxtst6, and freeglut3 for various

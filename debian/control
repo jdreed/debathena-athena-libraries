@@ -61,6 +61,7 @@ Recommends: libgdk-pixbuf-2.0-0,
  libcanberra-gtk-module,
  unity-gtk2-module,
  libxmu6,
+ libxp6,
  libxtst6,
  freeglut3
 # Technically we also want overlay-scrollbar-gtk2, but it's broken
