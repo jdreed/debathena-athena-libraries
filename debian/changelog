@@ -1,3 +1,9 @@
+debathena-athena-libraries (1.6.2) unstable; urgency=low
+
+  * Add libnspr4 to i386, per (Trac: #1534) for HSPICE
+
+ -- Jonathan Reed <jdreed@mit.edu>  Mon, 08 Sep 2014 16:54:46 -0400
+
 debathena-athena-libraries (1.6.1) unstable; urgency=low
 
   * Add libxp6 (Trac: #1516) for i386, which was accidentally omitted from

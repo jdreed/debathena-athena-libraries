@@ -63,7 +63,8 @@ Recommends: libgdk-pixbuf-2.0-0,
  libxmu6,
  libxp6,
  libxtst6,
- freeglut3
+ freeglut3,
+ libnspr4,
 # Technically we also want overlay-scrollbar-gtk2, but it's broken
 # LP:1262022
 Description: 32-bit Athena libraries for Debathena
